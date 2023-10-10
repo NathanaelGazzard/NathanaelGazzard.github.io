@@ -1,0 +1,89 @@
+/* Reset default margin and padding */
+body, h1, h2, ul, li {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the body as a flex container */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Make the body take up the full viewport height */
+}
+
+/* Set background color and styles for the header */
+header {
+    background-color: rgb(28, 28, 28);
+    height: 18%; /* Set the header height as a percentage of the viewport height */
+    z-index: 1; /* To ensure it's above the main content */
+}
+
+/* Style the h1 (NATE) in the header */
+header h1 {
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 42px;
+}
+
+/* Style the subtitle (Nathanael Gazzard) with monospace font */
+.subtitle {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+}
+
+/* Style the navigation menu */
+#navbar ul {
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+#navbar li {
+    display: inline;
+    margin: 0 20px; /* Adjust the spacing as needed */
+}
+
+#navbar a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Set main to take full height */
+main {
+    flex-grow: 1; /* Allow the main content to grow and fill available space */
+    background-color: white; /* Optional: Add a background color to the main content */
+    overflow: auto;
+    position: relative; /* Add position:relative to make children positioned relative to it */
+}
+
+
+
+/**
+ * See: http://www.css-101.org/articles/ken-burns_effect/css-transition.php
+ */
+
+/**
+ * Styling the container (the wrapper)
+ * 
+ * position is used to make this box a containing block (it becomes a reference for its absolutely positioned children). overflow will hide part of the images moving outside of the box.
+ */
+
+ #slideshow {
+    position: relative;
+    width: 100%; /* Set the width to 100% to fill the available space in main */
+    height: 100%; /* Set the height to 100% to fill the available space in main */
+    overflow: hidden;
+}
+
+#slideshow img {
+    position: relative;
+    width: 100%; /* Let the browser calculate the width based on the aspect ratio */
+    height: auto; /* Set height to 100% to fill the container vertically */
+}
