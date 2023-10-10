@@ -65,25 +65,40 @@ main {
 
 
 
-/**
- * See: http://www.css-101.org/articles/ken-burns_effect/css-transition.php
- */
+:root {
+    --move-vert: 5%; 
+    --move-hor: 5%;
+  }
 
-/**
- * Styling the container (the wrapper)
- * 
- * position is used to make this box a containing block (it becomes a reference for its absolutely positioned children). overflow will hide part of the images moving outside of the box.
- */
 
- #slideshow {
-    position: relative;
-    width: 100%; /* Set the width to 100% to fill the available space in main */
-    height: 100%; /* Set the height to 100% to fill the available space in main */
-    overflow: hidden;
+@keyframes ken-burns {
+    0% {
+      transform: translate(0, 0) scale(1.025);
+    }
+    100% {
+      transform: translate(--move-ver, --move-hor) scale(1.05);
+    }
+  }
+
+.ken-burns{
+    height: auto;
+    animation-name: ken-burns;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
-#slideshow img {
-    position: relative;
-    width: 100%; /* Let the browser calculate the width based on the aspect ratio */
-    height: auto; /* Set height to 100% to fill the container vertically */
-}
+.mySlides {
+    display: none;
+    height: 100%;
+    width: 100%;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+  }
