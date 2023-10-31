@@ -1,6 +1,0 @@
-displaying data: 'tactical briefing'
-the USA have launched their nuclear missles at our largest cities. You must take command of out anti-missile turrets.
-use the left and right arrow keys to switch which turret you are controlling
-use the mouse to aim and the left mouse button to fire
-your turrets can fire a volley of 4 missiles before the need to reload
-our trucks will reguarly resupply missles to your turrets. Watch out though - the American B2 stealth bombers have been targeting our convoys
