@@ -1,9 +1,3 @@
-<?php
-include 'util/cv.php';
-
-$blurb = getBlurb();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,13 +25,7 @@ $blurb = getBlurb();
 
     <br /><br />
 
-    <h2>CV</h2>
-
-    <p>
-      <? $blurb ?>
-    </p>
-
-    <h3>Professional Skills:</h3>
+    <p><a href="Nathanael Gazzard - CV - 2023.pdf" download>Download CV</a></p>
 
   </main>
 
